@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi f c</title>
+</head>
+<body>
+<input type="number" id="input" placeholder="nhập độ f" oninput="chuyendoi(this.value)" onchange="chuyendoi(this.value)"/>
+<br>
+<span id="display"></span>
+<script>
+    function chuyendoi(f) {
+        f = Number(f);
+        document.getElementById('display').innerHTML = (f-32)/1.8;
+    }
+</script>
+</body>
+</html>
